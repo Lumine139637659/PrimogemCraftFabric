@@ -1,0 +1,43 @@
+# ---- Gradle ----
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ---- IDE ----
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+bin/
+out/
+
+# ---- Loom / 运行目录 ----
+run/
+runs/
+remappedSrc/
+.fabric/
+
+# ---- 日志 ----
+*.log
+logs/
+crash-reports/
+
+# ---- 系统文件 ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- 本地依赖与重映射产物 ----
+# 第三方 jar 体积大且可由 tools/RemapDeps.java 重新生成，不入库
+tools/remap-input/
+tools/remap-output/
+tools/*.jar
+tools/*.class
+
+# ---- 临时脚本产物 ----
+tools/__pycache__/
+*.pyc
